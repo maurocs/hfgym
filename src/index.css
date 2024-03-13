@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Anton&family=Montserrat:wght@400;500;600;700;800;900&family=Unbounded:wght@900&display=swap'");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --black-gradient: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+  --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #212121;
+}
+
+.header1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+.paragraph {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2;
+}
+
+.action-button {
+  padding: 1rem 1.5rem;
+  border-radius: 0.375rem;
+  width: fit-content;
+  text-transform: uppercase;
+  font-size: large;
+  transition: 0.1s;
+}
+
+.selected-ft {
+  color: rgb(255, 255, 255);
+  border-bottom: white 5px solid;
+}
+
+.sct {
+  width: 100%;
+  max-width: 1300px;
+  color: white;
+  align-items: top;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0;
+}
+
+.p-icon {
+  height: 3.5rem;
+  display: inline-block;
+  padding: 0 0.5rem;
+}
+
+.hero-background {
+  background-image: url("./assets/hero-background.png");
+  background-position: center;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-background {background-image: url("./assets/about-background.png");
+    background-position: center;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.perspective-3d {
+  perspective: 50px;
+  z-index: '50';
+}
+
+.slide-in-bck-center {
+	-webkit-animation: slide-in-blurred-bottom 0.4s ;
+	        animation: slide-in-blurred-bottom 0.4s ;
+}
+
+.fade-in-bottom {
+	-webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.opaque-nav {
+  background-color: #212121;
+  transition: all 0.5s ease;
+  filter: invert(1);
+  opacity: 0.9;
+  backdrop-filter: blur(10px);
+}
+
+.small-logo {
+  height: 1.5rem;
+}
+
+@-webkit-keyframes slide-in-blurred-bottom {
+  0% {
+    -webkit-transform: translateY(500px) scaleY(2.5) scaleX(0.2);
+            transform: translateY(500px) scaleY(2.5) scaleX(0.2);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+            transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-blurred-bottom {
+  0% {
+    -webkit-transform: translateY(500px) scaleY(2.5) scaleX(0.2);
+            transform: translateY(500px) scaleY(2.5) scaleX(0.2);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+            transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+
+
+@media (hover: hover) and (pointer: fine) {
+  .not-selected-ft:hover {
+    color: rgb(255, 255, 255);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-background {
+    background-image: url("./assets/hero-background-mobile.png");
+  }
+  .about-background {
+    background-image: url("./assets/about-background-mobile.png");
+  }
+  .p-icon {
+    height: 2.5rem;
+    padding: 0 0.3rem;
+  }
+  .header1 {
+    font-size: 1.5rem;
+  }
+  .paragraph {
+    font-size: 1rem;
+  }
+  .sct {
+    padding: 1rem;
+  }
+}
