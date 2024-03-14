@@ -6,7 +6,7 @@ const Trainers = () => {
                 <div className="flex flex-row justify-center items-end z-9">
                     {
                         trainers.items.map((trainer) => 
-                        <img key={trainer.id} className={`object-cover ${trainer.id === "item_2" ? " sm:h-[500px] h-[260px] sm:-mx-[100px] -mx-[120px] z-10" : "object-cover sm:h-[450px] h-[240px] z-8"} drop-shadow-md`} src={trainer.src} alt={trainer.name} />
+                        <img key={trainer.id} className={`object-cover ${trainer.id === "item_2" ? " sm:h-[500px] h-[170px] sm:-mx-[100px] -mx-[85px] z-10" : "object-cover sm:h-[450px] h-[150px] z-8"} drop-shadow-md`} src={trainer.src} alt={trainer.name} />
                         )
                     }
                 </div>

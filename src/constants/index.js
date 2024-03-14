@@ -36,7 +36,7 @@ var facilities = {
     id : "equipamentos",
     title : "Equipamentos acessíveis, resultados espectaculares!",
     text : "Com uma seleção cuidadosamente escolhida de equipamentos, temos o necesario para o teu treino independentemente do teu nivel ou estilo de treino.",
-    src : "./src/assets/hero3.mp4",
+    src : "assets/hero3.mp4",
     items : [
         {
             id : "item_1",
@@ -60,7 +60,7 @@ var classes = {
     id : "aulas",
     title : "Diversão e motivação com a melhor comunidade de atletas!",
     text : "Diverte-te nas nossas energeticas aulas de grupo. Temos mais de 20 aulas mensais para atender a todos os gostos e níveis de fitness.",
-    src : "./src/assets/hero2.mp4",
+    src : "assets/hero2.mp4",
     items : [
         {
             id : "item_1",
@@ -87,17 +87,17 @@ var trainers = {
     items : [
         {
             id : "item_1",
-            src : "./src/assets/João.png",
+            src : "assets/João.png",
             name : "João",
         },
         {
             id : "item_2",
-            src : "./src/assets/Bruno.png",
+            src : "assets/Bruno.png",
             name : "Bruno",
         },
         {
             id : "item_3",
-            src : "./src/assets/Eurico.png",
+            src : "assets/Eurico.png",
             name : "Eurico",
         }
     ]

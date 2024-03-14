@@ -11,6 +11,9 @@ import SectionItem from "./SectionItem";
 import Trainers from "./Trainers";
 import Athletes from "./Athletes";
 import Athlete from "./Athlete";
+import Footer from "./Footer";
+import Contact from "./Contact";
+
 
 export {
     Navbar,
@@ -25,5 +28,7 @@ export {
     SectionItem,
     Trainers,
     Athletes,
-    Athlete
+    Athlete,
+    Footer,
+    Contact
 }

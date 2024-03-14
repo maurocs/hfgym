@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 
-import {close, menu, hfLogo } from '../assets';
+import {close, menu } from '../../public/assets';
 import { navLinks } from '../constants';
 
 import { ContactButton } from "./";
@@ -38,10 +38,10 @@ const Navbar = () => {
   }, [toggle])
 
   return (
-    <nav id="navbar" className="w-full sm:px-6 px-2 bg-transparent text-white sticky top-0 z-50">
+    <nav id="navbar" className="w-full sm:px-6 px-2 bg-[#212121cf] text-white sticky top-0 z-50">
       <div className="w-full flex py-4 justify-between items-center navbar z-20">
         <a href="#home">
-          <img id="logo" src={hfLogo} alt="healthy fitness gym" 
+          <img id="logo" src="assets/logo.svg" alt="healthy fitness gym" 
           className="sm:h-10 h-[28px]"/>
         </a>
   

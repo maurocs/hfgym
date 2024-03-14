@@ -1,4 +1,4 @@
-import {Navbar, Hero, Facilities, Classes, About, Trainers, Athletes } from "./components";
+import {Navbar, Hero, Facilities, Classes, About, Trainers, Athletes, Footer, Contact } from "./components";
 
 function App() {
   return (
@@ -11,6 +11,8 @@ function App() {
         <Facilities></Facilities>
         <Trainers></Trainers>
         <Athletes></Athletes>
+        <Contact></Contact>
+        <Footer></Footer>
       </main>
     </>
   )

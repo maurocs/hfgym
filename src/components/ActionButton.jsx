@@ -2,10 +2,10 @@ import { PropTypes } from "prop-types"
 
 const ActionButton = (props) => {
   return (
-    <button type="button" className="font-montserrat action-button text-hfWhite
+    <button type="button" className={`font-montserrat ${props.margin ?? ''} py-4 px-6 rounded-lg text-hfWhite
     bg-gradient-to-r from-primary to-orange-500 hover:bg-gradient-to-bl
     active:ring-4 active:outline-none active:ring-red-orange-500 
-    dark:active:ring-orange-700 uppercase shadow-md font-bold" onClick={props.onClick}>
+    dark:active:ring-orange-700 uppercase shadow-md font-bold flex justify-center items-center`} onClick={props.onClick}>
     {props.children}
     </button>
   )
@@ -13,7 +13,8 @@ const ActionButton = (props) => {
 
 ActionButton.propTypes = {
   children: PropTypes.node,
-  onClick: PropTypes.func
+  onClick: PropTypes.func,
+  margin: PropTypes.string
 }
 
 export default ActionButton

@@ -1,4 +1,6 @@
 import PropTypes from 'prop-types';
+import ActionButton from './ActionButton';
+import { goArrow } from '../../public/assets';
 
 const Section = (props) => {
   return (
@@ -9,8 +11,12 @@ const Section = (props) => {
             <p className='sm:text-2xl max-w-[80vw] w-[1000px] font-montserrat'>{props.text}</p>
         </div>
         <div className={`flex flex-wrap align-middle justify-center gap-8 ${props.inverted ? 'flex-row-reverse' : 'flex-row'}`}>
-            <div className='flex flex-col justify-around max-w-[600px]'>
+            <div className='flex flex-col items-center justify-around max-w-[600px]'>
                 {props.children}
+                <ActionButton margin="mt-8">
+                  <h1>Juntate hoje!</h1>
+                  <img className="w-5 ml-2 drop-shadow-sm" src={goArrow} alt=""/>
+                </ActionButton>
             </div>
             <video className="max-w-[90vw] w-[600px] object-cover rounded-2xl shadow-lg" 
             src={props.src} alt="" autoPlay loop muted/>

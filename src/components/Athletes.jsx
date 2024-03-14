@@ -11,13 +11,15 @@ const Athletes = () => {
 
   return (
     <div className="flex flex-col sm:py-44 py-20 items-center justify-center overflow-scroll">
-        <h1 className='text-hfWhite sm:text-4xl text-[1.4rem] font-bold max-w-[85vw] w-[800px] font-unbounded uppercase tracking-wide flex flex-wrap justify-center gap-2 leading-4 mb-2'>
-            <span>Quem melhor que </span><span className="underline">Os nossos atletas</span> para opinar?
+        <h1 className='text-hfWhite sm:text-4xl text-[1.4rem] font-bold max-w-[85vw] w-[800px] font-unbounded uppercase tracking-wide flex flex-wrap justify-center sm:gap-2 gap-0 leading-8 mb-2 text-center'>
+            <span>Conhece as</span>
+            <span>historias dos</span>
+            <span className="underline">nossos atletas HF</span>
         </h1>
-        <Marquee speed={20} pauseOnClick>
+        <Marquee speed={30} pauseOnClick>
         {
             shuffled.map((atleta) => {
-                return <Athlete key={atleta.nome} src={`./src/assets/atlethes/${atleta.nome}.png`} name={atleta.nome} text={atleta.testemunha} since={atleta.desde}></Athlete>
+                return <Athlete key={atleta.nome} src={`assets/athletes/${atleta.nome}.png`} name={atleta.nome} text={atleta.testemunha} since={atleta.desde} socials={atleta.redes}></Athlete>
             })
         }
         

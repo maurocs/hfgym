@@ -2,7 +2,7 @@ import { about } from "../constants"
 
 const About = () => {
   return (
-    <section className='about-background'>
+    <section className='sm:bg-[url("assets/about-background.png")] bg-[url("assets/about-background-mobile.png")] about-background'>
       <div className={`flex flex-col gap-8 text-hfWhite sm:py-44 py-20 align-middle justify-center`}>
         <div className='flex flex-col text-center items-center'>
             <h1 className='sm:text-4xl text-[1.4rem] font-bold max-w-[85vw] w-[800px] font-unbounded uppercase tracking-wide'>
