@@ -1,8 +1,14 @@
 import { about } from "../constants"
+import { aboutBackground, aboutBackgroundMobile } from "../../public/assets"
+import { useMediaQuery } from 'react-responsive'
 
 const About = () => {
+  const isMobile = useMediaQuery({
+    query: '(max-width: 768px)'
+  })
+
   return (
-    <section className='sm:bg-[url("assets/about-background.png")] bg-[url("assets/about-background-mobile.png")] about-background'>
+    <section className='about-background' style={{backgroundImage: `${isMobile ? `url(${aboutBackgroundMobile})` : `url(${aboutBackground})`}`}} id='about-background'>
       <div className={`flex flex-col gap-8 text-hfWhite sm:py-44 py-20 align-middle justify-center`}>
         <div className='flex flex-col text-center items-center'>
             <h1 className='sm:text-4xl text-[1.4rem] font-bold max-w-[85vw] w-[800px] font-unbounded uppercase tracking-wide'>

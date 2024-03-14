@@ -56,7 +56,7 @@ const Navbar = () => {
         </ul>
 
         <div className="sm:flex hidden">
-          <ContactButton />
+          <ContactButton/>
         </div>
 
         <div className="sm:hidden flex flex-1 justify-end items-center z-30">
@@ -81,7 +81,7 @@ const Navbar = () => {
                 </li>
               ))}
               <li className="my-4">
-                <ContactButton />
+                <ContactButton/>
               </li>
             </ul>
           </div>

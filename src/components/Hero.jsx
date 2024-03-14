@@ -2,9 +2,14 @@
 import { ActionButton } from "./";
 import { useEffect } from "react";
 import { hero } from "../constants";
-import goArrow from "../../public/assets/goArrow.svg";
+import {goArrow} from "../../public/assets";
+import { heroBackground, heroBackgroundMobile } from "../../public/assets";
+import { useMediaQuery } from 'react-responsive'
 
 const Hero = () => {
+  const isMobile = useMediaQuery({
+    query: "(max-width: 768px)"
+  })
   useEffect(() => {
     return () => {
       document.getElementById("heroHeader").parentElement.addEventListener("animationend", () => {
@@ -14,7 +19,7 @@ const Hero = () => {
   }, [])
   
   return (
-    <section className='sm:bg-[url("assets/hero-background.png")] bg-[url("assets/hero-background-mobile.png")] hero-background h-[90vh] pt-16'>
+    <section className='hero-background h-[90vh] pt-16' style={{backgroundImage: `${isMobile ? `url(${heroBackgroundMobile})` : `url(${heroBackground})`}`}}>
         <div className="header flex flex-col items-center justify-center 
         text-hfWhite sm:gap-8 gap-8 px-6 perspective-3d">
           <h1 id="heroHeader" className="flex flex-wrap leading-[1.5]

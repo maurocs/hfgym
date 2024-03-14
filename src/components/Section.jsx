@@ -14,7 +14,7 @@ const Section = (props) => {
             <div className='flex flex-col items-center justify-around max-w-[600px]'>
                 {props.children}
                 <ActionButton margin="mt-8">
-                  <h1>Juntate hoje!</h1>
+                  <h1>Junta-te hoje!</h1>
                   <img className="w-5 ml-2 drop-shadow-sm" src={goArrow} alt=""/>
                 </ActionButton>
             </div>

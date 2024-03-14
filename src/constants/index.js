@@ -4,16 +4,16 @@ var navLinks = [
         title: 'Inicio',
     },
     {
-        id: 'about',
-        title: 'Aulas',
-    },
-    {
         id: 'work',
         title: 'Planos',
     },
     {
-        id: 'contact',
-        title: 'Equipa',
+        id: 'comunity',
+        title: 'Comunidade',
+    },
+    {
+        id: 'services',
+        title: 'Serviços',
     },
 ]
 
