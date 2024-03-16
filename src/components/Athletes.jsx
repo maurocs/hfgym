@@ -10,7 +10,7 @@ const Athletes = () => {
     .map(({ value }) => value)
 
   return (
-    <div className="flex flex-col sm:py-44 py-20 items-center justify-center">
+    <section className="flex flex-col sm:py-44 py-20 items-center justify-center">
         <h1 className='text-hfWhite sm:text-4xl text-[1.4rem] font-bold max-w-[85vw] w-[800px] font-unbounded uppercase tracking-wide flex flex-wrap justify-center sm:gap-2 gap-0 leading-8 mb-2 text-center'>
             <span>Conhece as</span>
             <span>historias dos</span>
@@ -24,7 +24,7 @@ const Athletes = () => {
         }
         
         </Marquee>
-    </div>
+    </section>
   )
 }
 

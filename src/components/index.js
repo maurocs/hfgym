@@ -13,6 +13,10 @@ import Athletes from "./Athletes";
 import Athlete from "./Athlete";
 import Footer from "./Footer";
 import Contact from "./Contact";
+import Prices from "./Prices";
+import PriceCard from "./PriceCard";
+import PriceFeature from "./PriceFeature";
+import Closing from "./Closing";
 
 
 export {
@@ -30,5 +34,9 @@ export {
     Athletes,
     Athlete,
     Footer,
-    Contact
+    Contact,
+    Prices,
+    PriceCard,
+    PriceFeature,
+    Closing
 }

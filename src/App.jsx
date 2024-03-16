@@ -1,4 +1,5 @@
-import {Navbar, Hero, Facilities, Classes, About, Trainers, Athletes, Footer, Contact } from "./components";
+import {Navbar, Hero, Facilities, Classes, 
+  About, Trainers, Athletes, Footer, Contact, Prices, Closing } from "./components";
 
 function App() {
   return (
@@ -7,11 +8,13 @@ function App() {
       <main>
         <Hero></Hero>
         <About></About>
-        <Classes></Classes>
-        <Facilities></Facilities>
         <Trainers></Trainers>
+        <Facilities></Facilities>
+        <Classes></Classes>
         <Athletes></Athletes>
+        <Prices></Prices>
         <Contact></Contact>
+        <Closing></Closing>
         <Footer></Footer>
       </main>
     </>

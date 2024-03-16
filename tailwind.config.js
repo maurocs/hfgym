@@ -6,6 +6,7 @@ export default {
     extend: {
       colors: {
         hfDark: "#212121",
+        hfDarkish: "#313131",
         hfWhite: "#FAFAFA",
         primary: "#E68542",
         dark: "#0D0602",

@@ -5,7 +5,7 @@ import { goArrow } from '../../public/assets';
 const Section = (props) => {
   return (
     <div className={`flex flex-col gap-8 ${props.color ?? 'text-hfDark'}
-        sm:py-44 py-20 flex align-middle justify-center`}>
+        flex align-middle justify-center`}>
         <div className='flex flex-col text-center items-center'>
             <h1 className='sm:text-3xl text-[1.1rem] font-bold max-w-[80vw] w-[800px] font-unbounded uppercase tracking-wide'>{props.title}</h1>
             <p className='sm:text-2xl max-w-[80vw] w-[1000px] font-montserrat'>{props.text}</p>
@@ -14,7 +14,7 @@ const Section = (props) => {
             <div className='flex flex-col items-center justify-around max-w-[600px]'>
                 {props.children}
                 <ActionButton margin="mt-8">
-                  <h1>Junta-te hoje!</h1>
+                  <h1>Conhece mais</h1>
                   <img className="w-5 ml-2 drop-shadow-sm" src={goArrow} alt=""/>
                 </ActionButton>
             </div>

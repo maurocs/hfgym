@@ -29,7 +29,7 @@ var about = {
     id : "about",
     title : "No HF Gym temos um único objetivo: ",
     title_span: "o teu successo!",
-    text : "Fundado com a visão de proporcionar um ambiente acolhedor e acessível para todos, nos dedicamos a oferecer uma experiência fitness que vai além do convencional. Com uma equipa de treinadores profissionais apaixonados e instalações confortáveis e accesiveis, estamos aqui para orientar-te em cada passo do teu percurso. Sem importar se és iniciante ou um atleta experiente, no HF Gym encontrarás o apoio e a motivação necessários para transformar a tua vida. Junta-te a nós e descubre o poder do HF!."
+    text : "E por isso que ofrecemos aos nossos atletas uma experiencia que vai além do convencional. Com equipamentos eficazes, treinadores altamnente qualificados, horarios flexiveis e a mais inclusiva comunidade de atletas apaixonados pelo fitness, o HF Gym é o lugar ideal para atingires os teus objetivos!"
 }
 
 var facilities = {
@@ -83,7 +83,7 @@ var classes = {
 var trainers = {
     id : "treinadores",
     title : "Conhece a familia HF",
-    text : "No HF Gym, temos o orgulho de contar com uma equipa dedicada de profissionais apaixonados pelo fitness e pelo bem-estar. Cada membro da nossa equipa foi cuidadosamente selecionado não apenas pela sua experiência e qualificações, mas também pelo seu compromisso em ajudar os nossos membros a alcançarem os seus objetivos pessoais. Combinando conhecimento especializado com uma abordagem acolhedora, nossa equipa está pronta para ajudar-te em cada etapa da tua jornada de fitness. Conhece a nossa equipa e descubre como podemos ajudar-te a alcançar o teu potencial máximo.",
+    text : "Temos o orgulho de contar com uma equipa dedicada de profissionais apaixonados pelo fitness e pelo bem-estar. Combinando conhecimento especializado com uma abordagem acolhedora, nossa equipa está pronta para ajudar-te em cada etapa da tua jornada de fitness!",
     items : [
         {
             id : "item_1",
@@ -103,11 +103,20 @@ var trainers = {
     ]
 }
 
+
+var closing = {
+    id : "closing",
+    title : "",
+    title_span: "Não esperes mais!",
+    text : "Vem cumprir os teus objetivos e transformar a tua vida com o HF Gym, estamos aqui para ajudar-te!"
+}
+
 export {
     navLinks,
     hero,
     about,
     facilities,
     classes,
-    trainers
+    trainers,
+    closing
 }
