@@ -6,6 +6,9 @@ import heroBackground from './hero-background.png'
 import heroBackgroundMobile from './hero-background-mobile.png'
 import aboutBackground from './about-background.png'
 import aboutBackgroundMobile from './about-background-mobile.png'
+import phone from './phone.svg'
+import location from './location.svg'
+import email from './email.svg'
 
 export {
     hfLogo,
@@ -15,5 +18,8 @@ export {
     heroBackground,
     heroBackgroundMobile,
     aboutBackground,
-    aboutBackgroundMobile
+    aboutBackgroundMobile,
+    phone,
+    location,
+    email
 }
